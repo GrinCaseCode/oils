@@ -556,6 +556,9 @@
     .cooperation-block__image1 {
         display: none;
     }
+    .billbord__categories {
+        max-width: 452px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -654,6 +657,12 @@
     .item-marketplace__image {
         height: 150px;
     }
+    .category-billbord_4 .category-billbord__image img {
+        max-width: 185px;
+    }
+    .category-billbord_4 .category-billbord__image {
+    top: 119px;
+}
 }
 
 /* Custom, iPhone Retina */
