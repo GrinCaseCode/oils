@@ -707,7 +707,7 @@
 	}
 }
 @media (min-width: 1450px) {
-	.container {
+	.container { 
 		max-width: 1450px;
 	}
 }
