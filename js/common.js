@@ -1,6 +1,48 @@
 $(document).ready(function() {
 
 
+$(".sidebar-catalog > li.sidebar-catalog__haschild > a").click(function(e) {
+		e.preventDefault();
+		$(this).parent().siblings().find("ul").slideUp(200);
+		$(this).parent().siblings().find("a").removeClass("active");
+		$(this).toggleClass("active");
+		$(this).siblings("ul").slideToggle(200);
+	});
+
+$(".slider-card").slick({
+				dots: false,
+				arrows: true,
+				slidesToShow: 1,
+				infinite: true,
+				touchThreshold: 1000,
+				slidesToScroll: 1,
+				prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+				nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+			});
+
+$('.tabs-card li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-card").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	}); 
+
+$(".wholesales-name").click(function(e) {
+    e.preventDefault();
+    $(".wholesales-name").removeClass("active");
+    $(".wholesales-content").slideUp(200);
+    if ($(this).siblings(".wholesales-content").is(":hidden")) {
+        $(this).parent().addClass("active");
+        $(this).siblings(".wholesales-content").slideDown(200);
+    } else {
+        $(this).parent().removeClass("active");
+        $(this).siblings(".wholesales-content").slideUp(200);
+    }
+});
+
+
 //прилипающие меню
 var $menu = $(".header");
 $(window).scroll(function(){
@@ -19,7 +61,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 }
 
 	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+	$(".nav-article li a").mPageScroll2id({
+		offset: 110
+	});
 
 
 	//кнопка sandwich
@@ -127,7 +171,125 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 	});
 
+	$('.our-slider').each(function(){
+        var $slider = $(this);
+        if ($slider.length) {
+            var currentSlide;
+            var slidesCount;
+            var sliderCounter = document.createElement('div');
+            sliderCounter.classList.add('slider__counter');
+
+            var updateSliderCounter = function(slick, currentIndex) {
+                currentSlide = slick.slickCurrentSlide() + 1;
+                slidesCount = slick.slideCount;
+                $(sliderCounter).html('<span>0'+currentSlide + '</span> <b>/</b>' +'0'+slidesCount+ '')
+            };
+
+            $slider.on('init', function(event, slick) {
+                $(this).siblings(".our-bottom__slider").append(sliderCounter);
+                updateSliderCounter(slick);
+            });
+
+            $slider.on('afterChange', function(event, slick, currentSlide) {
+                updateSliderCounter(slick, currentSlide);
+            });
+            $slider.slick({
+                dots: false,
+                arrows: true,
+                slidesToShow: 3,
+                infinite: true,
+                touchThreshold: 1000,
+                slidesToScroll: 1,
+                prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+                nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        }
+    });
+
+    $('.slider-documents').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        touchThreshold: 1000,
+        prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+        nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow:4,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow:3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow:2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    variableWidth: true
+                }
+            }
+        ]
+    });
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
+
+	jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+	});
 
 
 {

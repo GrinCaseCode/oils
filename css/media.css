@@ -37,6 +37,40 @@
     font-size: 35px;
     line-height: 46px;
 }
+.row_categories .category-billbord {
+    font-size: 14px;
+}
+.row_categories > div {
+    padding: 0 15px;
+}
+.row_categories {
+    margin: 0 -15px;
+}
+.item-news__title {
+    font-size: 23px;
+}
+.nav-article {
+    margin-right: -20px;
+}
+.article__block {
+    margin-left: 20px;
+}
+.about-img {
+    top: -80px;
+}
+.slider-documents__circle {
+    width: 220px;
+    height: 220px;
+}
+.slider-documents__item {
+    padding-top: 40px;
+}
+.delivery-block h3 {
+    font-size: 22px;
+}
+.delivery-block p:nth-of-type(1) {
+    font-size: 16px;
+}
 }
 @media only screen and (max-width : 1450px) {
     .navigation a {
@@ -94,6 +128,75 @@
 }
 .item-marketplace__image {
     height: 220px;
+}
+.block-form {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.row_categories .category-billbord__image img {
+    max-width: 320px;
+}
+.row_catalog {
+    margin: 0 -7px;
+}
+.row_catalog > div {
+    padding: 0 7px;
+    margin-bottom: 15px;
+}
+.slider-card__item {
+    height: 440px;
+}
+.title-stores {
+    margin-top: 25px;
+}
+.prices-card {
+    padding-top: 29px;
+    padding-bottom: 25px;
+}
+.item-news__title {
+    font-size: 21px;
+}
+.item-news__content {
+    padding: 25px;
+}
+.news {
+    background-position: left -400px bottom;
+}
+.nav-article {
+    margin-right: -50px;
+}
+.article__block {
+    margin-left: 40px;
+}
+.about-img img {
+    max-width: 420px;
+}
+.about-img {
+    right: -90px;
+}
+.slider-documents__circle {
+    width: 190px;
+    height: 190px;
+}
+.slider-documents__item p {
+    font-size: 14px;
+}
+.slider-documents__item p {
+    margin-top: 74px;
+}
+.delivery-block {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.delivery-block h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.wholesales-img img {
+    max-width: 700px;
+}
+.wholesales-img {
+    top: 170px;
 }
 }
 @media only screen and (max-width : 1300px) {
@@ -156,6 +259,61 @@
     }
     .wholesale__image img {
         max-width: 700px;
+    }
+    .checkbox-wrap {
+        white-space: normal;
+    }
+    .block-form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row_categories .category-billbord__image img {
+        max-height: initial;
+    }
+    .item-store {
+        width: 146px;
+    }
+    .about-img img {
+        max-width: 366px;
+    }
+    .about-img {
+        top: -42px;
+    }
+    .column-right {
+        margin-left: -19px;
+    }
+    .about-us .assortment .container {
+        padding-bottom: 64px;
+    }
+    .about-us .assortment__plant {
+        left: 55%;
+        bottom: -95px;
+    }
+    .production .title-section {
+        margin-top: 0;
+    }
+    .production .item-about__image {
+        bottom: -104px;
+    }
+    .production .title-section br {
+        display: none;
+    }
+    .our-slider__img {
+        height: 300px;
+    }
+    .slider-documents__item {
+        padding-bottom: 30px;
+    }
+    .wholesales-img {
+        top: 193px;
+    }
+    .wholesales-pay p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .delivery-block h2 {
+        margin-bottom: 18px;
+        font-size: 27px;
     }
 }
 /* Large Devices, Wide Screens */
@@ -261,6 +419,59 @@
     }
     .container.container_min {
         max-width: 920px;
+    }
+
+    .row_categories .category-billbord__image img {
+        max-width: 245px;
+    }
+    .row_categories .category-billbord {
+        min-height: 313px;
+    }
+    .categories {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .sidebar-catalog ul {
+        padding: 23px 12px;
+    }
+    .buttons-card .btn-main {
+        min-width: 170px;
+        margin-right: 19px;
+    }
+    .card-price {
+        margin-right: 15px;
+    }
+    .card-price strong {
+        font-size: 21px;
+    }
+    .item-store {
+        padding: 5px;
+        width: 113px;
+    }
+    .article__head {
+        height: 370px;
+    }
+    .about-img {
+        display: none;
+    }
+    .column-left {
+        margin-left: 0;
+    }
+    .wholesales-img {
+        display: none;
+    }
+    .wholesales-name {
+        font-size: 16px;
+    }
+    .delivery-block {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .list-delivery {
+        margin-top: 30px;
+    }
+    .wholesales-pay {
+        margin-top: 30px;
     }
 }
 
@@ -436,6 +647,98 @@
     .menu-mobile  .social-list {
         margin-bottom: 15px;
     }
+
+    .contacts .block-form {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .wrapper_page {
+        padding-top: 85px;
+    }
+    .row_categories .category-billbord__image img {
+        max-width: 264px;
+    }
+    .sidebar-catalog {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .col_catalog {
+        padding-left: 15px;
+    }
+    .col_features {
+        padding-left: 15px;
+    }
+    .col_slider {
+        padding-right: 15px;
+    }
+    .slider-card {
+        margin-bottom: 15px;
+    }
+    .nav-article {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .article__head {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .article__block {
+        margin-left: 0;
+    }
+    .nav-article li:first-child {
+        margin-top: 0;
+    }
+    .article h1 {
+        font-size: 37px;
+    }
+    .about-us .assortment-number img {
+        max-width: 350px;
+    }
+    .production:not(.production_top) .row > div:nth-child(1) {
+        order: 2;
+    }
+    .our .title-section {
+        margin-bottom: 20px;
+    }
+    .about {
+        padding-top: 65px;
+    }
+    .slider-documents__circle {
+        width: 220px;
+        height: 220px;
+    }
+    .slider-documents__item p {
+        margin-top: 45px;
+    }
+    .cooperation-subtitle {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .wholesales .cooperation {
+        margin-top: 25px;
+    }
+    .wholesales .item-cooperation {
+        margin-bottom: 25px;
+    }
+    .wholesales-order .title-section {
+        margin-top: 20px;
+    }
+    .col_lr {
+        padding: 0 15px;
+    }
+    .wholesales-pay {
+        max-width: 100%;
+        float: none;
+    }
+    .order-block table thead td {
+        font-size: 16px;
+    }
+    .order-block__head {
+        font-size: 20px;
+    }
+    .total-order {
+        padding-top: 25px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -559,6 +862,181 @@
     .billbord__categories {
         max-width: 452px;
     }
+    .contacts p strong {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .contacts-block:first-child,
+    .contacts-block {
+        margin-bottom: 25px;
+    }
+    .contacts .social-list {
+        margin-top: 15px;
+    }
+    .contacts .title-section {
+        margin-bottom: 15px;
+    }
+    .tab-container-card p {
+        margin-bottom: 15px;
+    }
+    .tab-container-card {
+        padding-top: 15px;
+        line-height: 22px;
+    }
+    .tabs-card a {
+        font-size: 15px;
+    }
+    .news {
+        background-image: none;
+    }
+    .news .pager {
+        padding: 0 45px;
+        justify-content: center;
+    }
+    .news .prev.page-numbers, .news .next.page-numbers {
+        position: absolute;
+    }
+    .news .prev.page-numbers {
+        left: 0;
+    }
+    .news .next.page-numbers {
+        right: 0;
+    }
+    .article h1 {
+        font-size: 31px;
+        padding-bottom: 11px;
+    }
+    .article__date {
+        font-size: 13px;
+        padding-bottom: 2px;
+    }
+    .article__head {
+        height: 260px;
+    }
+    .article__block {
+        padding: 25px 20px;
+        line-height: 22px;
+    }
+    .article__block h2 {
+        font-size: 20px;
+    }
+    .support {
+        padding: 50px 0;
+    }
+    .title-form {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .documents .title-section {
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .our-slider__img {
+        height: 230px;
+    }
+    .our {
+        padding-top: 40px;
+    }
+    .production {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .about-us .assortment-number__image {
+        top: 139px;
+        left: 102px;
+    }
+    .about-us .assortment-number__image img {
+        max-width: 140px;
+    }
+    .column-right {
+        margin-left: 0;
+    }
+    .slider-documents__item {
+        width: 280px;
+    }
+    .slider-documents {
+        padding-bottom: 70px;
+    }
+    .wholesales-list li {
+        line-height: 22px;
+        margin-bottom: 14px;
+    }
+    .delivery-block .wholesales-list {
+        margin-bottom: 15px;
+    }
+    .wholesales-order .block-form {
+        margin-top: 0;
+    }
+    .wholesales-block {
+        margin-top: 15px;
+    }
+    .wholesales-pay p {
+        margin-bottom: 10px;
+    }
+    .cooperation-subtitle {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .wholesales .cooperation-text {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 14px;
+    }
+    .wholesales-order .title-section {
+        font-size: 25px;
+    }
+    .delivery-block h2 {
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+    .delivery-block h3 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .delivery-block p:nth-of-type(1) {
+        font-size: 14px;
+    }
+    .list-delivery {
+        margin-top: 20px;
+    }
+    .wholesales-pay h2 {
+        font-size: 22px;
+        margin-bottom: 9px;
+    }
+    .wholesales-pay p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .head-order {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    .order-block__head {
+        font-size: 16px;
+    }
+    .order-block table td:first-child {
+        width: initial;
+        padding-left: 10px;
+    }
+    .order-block table td {
+        padding: 9px 4px;
+    }
+    .order-block table thead td {
+        font-size: 14px;
+    }
+    .order-block table td:nth-child(2) {
+        width: 100px;
+    }
+    .total-order {
+        font-size: 19px;
+    }
+    .order {
+        padding-bottom: 50px;
+    }
+    .order .title-section {
+        padding-bottom: 15px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -661,7 +1139,206 @@
         max-width: 185px;
     }
     .category-billbord_4 .category-billbord__image {
-    top: 119px;
+        top: 119px;
+    }
+    .contacts .block-form {
+        margin-top: 0;
+    }
+    .title-form {
+        font-size: 20px;
+        line-height: 33px;
+        margin-bottom: 15px;
+    }
+    .block-form {
+        padding: 25px 15px;
+    }
+    .row_categories .category-billbord__image img {
+        max-width: 260px !important;    
+    }
+    .row_categories .category-billbord {
+        margin-bottom: 65px;
+    }
+    .title-middle {
+        font-size: 20px;
+    }
+    .slider-card__item {
+        height: 355px;
+    }
+    .line-feature {
+        margin-bottom: 11px;
+        font-size: 12px;
+    }
+    .card-price {
+        margin-bottom: 10px;
+    }
+    .buttons-card {
+        display: block;
+    }
+    .buttons-card .btn-main {
+        width: 100%;
+        margin: 0 auto !important;
+        display: flex;
+        max-width: 260px;
+        margin-bottom: 20px !important;
+    }
+    .item-store {
+        margin-top: 10px;
+    }
+    .tabs-card a {
+        font-size: 14px;
+        margin-right: 0px;
+        padding: 6px 15px;
+    }
+    .card {
+        padding-bottom: 30px;
+    }
+    .item-news__image {
+        height: 209px;
+    }
+    .item-news__content {
+        padding: 17px 12px;
+    }
+    .item-news__title {
+        font-size: 17px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .item-news__text {
+        line-height: 20px;
+    }
+    .row_news > div {
+        margin-bottom: 20px;
+    }
+    .article__head {
+        margin: 0 -15px;
+        margin-bottom: 20px;
+    }
+    .article__block {
+        background-color: transparent;
+        padding: 0;
+    }
+    .article__block h2 {
+        font-size: 18px;
+    }
+    .article h1 {
+        font-size: 28px;
+        padding-bottom: 6px;
+    }
+    .article__block blockquote {
+        padding: 25px 15px;
+    }
+    .about-us .assortment-number img {
+        max-width: 304px;
+    }
+    .about-us .assortment-number__image img {
+        max-width: 113px;
+    }
+    .about-us .title-section {
+        margin-bottom: 14px;
+    }
+    .about-us p {
+        line-height: 22px;
+    }
+    .about-us .assortment .container {
+        padding-bottom:35px;
+    }
+    .slider-documents {
+        margin-left: 0px;
+    }
+    .slider-documents__item {
+        margin: 0 10px;
+    }
+    .documents {
+        margin-bottom: 40px;
+    }
+    .title-form {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .support .block-form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .delivery-block {
+        padding: 25px 15px;
+    }
+    .wholesales-pay {
+        padding: 25px 15px;
+        padding-top: 15px;
+    }
+    .modal-wrap .block-form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .modal-wrap .title-form {
+        line-height: 22px;
+    }
+    .wrap-radios {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item-radio label > span {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .item-radio {
+        margin: 0 10px;
+        margin-top: 15px;
+    }
+    .modal-wrap .item-form {
+        margin-bottom: 26px;
+    }
+    .head-order {
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+.order-block table td,
+.order-block table tr,
+.order-block table tbody,
+.order-block table {
+    display: block;
+}
+.order-block table tr {
+    padding: 10px 0;
+}
+.order-block table thead {
+    display: none;
+}
+.order-block table td {
+    width: 32%;
+    display: inline-block;
+}
+.order-block table td:nth-child(2) {
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+.order-block table td:nth-child(1) {
+    display: inline-block;
+    width: 70px;
+}
+.order-block table tbody tr:nth-child(odd) {
+    background-color: rgba(246,242,240,0.5);
+}
+.order-block table tbody tr:nth-child(odd) td {
+    background-color: transparent;
+}
+.order-block table td:nth-child(3),
+.order-block table td:nth-child(5) {
+    text-align: center;
+}
+.order-block table td:nth-child(3)::before {
+    content: "Цена";
+    display: block;
+    width: 100%;
+}
+.order-block table td:nth-child(5)::before {
+    content: "Сумма";
+    display: block;
+    width: 100%;
+}
+.modal-wrap .block-form {
+    padding-top: 32px;
 }
 }
 
