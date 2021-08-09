@@ -14,7 +14,7 @@
 	color: #6c6a67;
 	opacity: 0.8;
 }
-
+ 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -1983,14 +1983,14 @@ margin-left: 50px;
 	margin-bottom: 55px;
 }
 .reviews_about-us {
-	padding-top: 0px;
+	padding-top: 0px; 
 	margin-bottom: 61px;
 }
 .support {
 	padding-top: 107px;
 	background: url(../img/form-bg.png) no-repeat;
 	background-size: cover;
-	background-position: -50px;
+	background-position: center;
 	padding-bottom: 107px;
 }
 .support form {
@@ -2002,7 +2002,7 @@ margin-left: 50px;
 	width: 100%;
 	margin-top: 0px;
 }
-.support .block-form .title-form {
+.support .block-form .title-form { 
 	text-align: left;
 	font-weight: 500;
 }
