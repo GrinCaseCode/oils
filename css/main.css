@@ -1571,6 +1571,10 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s;
+}
+.item-store:hover {
+    background-color: #ddd;
 }
 .item-store img {
 	max-width: 100%;
@@ -2587,3 +2591,9 @@ text-align: center;
 #order-modal .block-form {
 	border-color: rgba(65,146,0,0.32);
 } 
+.modal-block {
+	display: none;
+}
+.billbord__categories .category-billbord:hover {
+	transform: scale(1.05);
+}
